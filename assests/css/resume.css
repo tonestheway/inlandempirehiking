@@ -1,178 +1,240 @@
-body {
-    background-color: aliceblue !important;
+#resume {
+    margin: 5em;
 }
 
-.customContainer {
-    background-color: white;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 0 20px 30px 20px;
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1rem 1.5fr;
+    -ms-grid-rows: 1fr;
 }
 
-.topSection,
-.middleSection,
-.bottomSection {
-    margin-left: 20px;
-    margin-right: 20px;
+.resume-grid>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
 }
 
-.experience,
-.education {
-    margin-top: 40px
+.resume-grid>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
 }
 
-.avataContainer div {
-    display: flex;
-    justify-content: center;
+.grid-1 {
+    background-color: #e6ecff;
+    padding: 2em;
 }
 
-.avataImage {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    transform: translateY(-75px);
+.grid-2 {
+    background-color: #d3d9ed;
+    padding: 2em;
 }
 
-.headlineTitle h1 {
+#education,
+#experience,
+#design-skills,
+#personal-skills,
+#hobbies,
+#contact {
+    margin: 60px 0px;
+}
+
+
+/***************************** grid-1 */
+#user-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 1em;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.icon-table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin: 0 auto;
+}
+
+#personal-grid,
+#hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1em 1fr;
+    -ms-grid-rows: 1fr 1em 1fr 1em;
+}
+
+#personal-grid>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#personal-grid>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#personal-grid>*:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+#personal-grid>*:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+#personal-grid>*:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+#personal-grid>*:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+#hobbies-grid>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#hobbies-grid>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#hobbies-grid>*:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+#hobbies-grid>*:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.personal-box,
+.hobbies-box {
     text-align: center;
-    transform: translateY(-50px);
-    text-transform: uppercase;
-}
-
-.headlineTitle span {
-    color: deepskyblue;
-    font-weight: bold;
-    letter-spacing: 15px;
-}
-
-/* hr styling */
-hr {
-    border-color: deepskyblue !important;
-}
-
-hr.firstHr {
-    transform: translateY(-30px);
-}
-
-.experience hr {
-    margin-right: 30px;
-}
-
-/* ==== Bottom Parts ==== */
-.sectionTitle {
-    color: darkslateblue;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.subSectionBox {
-    margin: 20px 0;
-}
-
-/* Education */
-.education .subSectionBox {
-    margin-right: 30px;
-    align-items: center;
-}
-
-.education .subSectionBox div:first-child>p {
-    font-weight: bold;
-    color: navy;
-}
-
-.eduDesBox {
-    background-color: lightblue;
-    padding: 10px;
+    background-color: #586db8;
+    padding: 15px;
+    border-radius: 20px;
     color: white;
-    border-radius: 10px;
 }
 
-.eduDesBox p,
-.experience p,
-.education .subSectionBox p {
-    margin-bottom: 0;
+
+/***************************** grid-2 */
+#name {
+    font-size: 40px;
 }
 
-/* Experience */
-.experience .subSectionBox div.row {
-    align-items: center;
+.box {
+    background-color: #7e90cf;
+    padding: 1em;
+    border-radius: 20px;
 }
 
-.experience div.subSectionBox div.col-3 p:first-child {
-    color: navy;
+#edu-table {
+    border-collapse: separate;
+    border-spacing: 10px;
 }
 
-p.year {
-    font-weight: lighter;
-    color: gray;
-    font-style: italic;
-}
-
-.experience .jobTitle {
-    font-weight: bold;
-    color: green;
-}
-
-/* contact */
-.contact i {
-    font-size: 20px;
-    color: navy;
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-/* skills */
-.technicalSkills p,
-.softSkills p {
-    background-color: midnightblue;
-    padding: 10px 5px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-}
-
-.softSkills p {
-    background: aqua;
-}
-
-/* hobbie sections */
-.hobbies p {
-    background-color:cyan;
-    padding: 10px 5px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-/* fun fact section */
-.funFact {
-    justify-content: space-between;
-}
-
-.funFact span {
+#edu-table td {
     padding-right: 10px;
-    color:aquamarine;
-    font-size: 20px;
+}
+
+#exp-table {
+    line-height: 25px;
+}
+
+#exp-table td {
+    padding: 5px 20px;
+}
+
+#design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    text-align: center;
+    width: 350px;
+
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 2em 1fr;
+    -ms-grid-rows: 1fr 2em;
+}
+
+#design-grid>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#design-grid>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#design-grid>*:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+#design-grid>*:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.circle-text {
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    border: 10px solid #586db8;
 }
 
 
-/* MEDIA QUERIES */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .experience p.description {
-        display: none;
+/***************************** facts */
+.fact {
+    background-color: #c1c9e6;
+    padding: 2em;
+}
+
+
+/***************************** media */
+@media only screen and (max-width: 1300px) {
+    #resume {
+        margin: 5em 3em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .resume-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.3fr;
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 1rem 1.3fr;
     }
 
-    .experience hr {
-        margin-right: 0;
+    .resume-grid>*:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
     }
 
-    .education .subSectionBox {
-        margin-right: 0;
-    }
-
-    .experience .jobTitle {
-        float: right;
+    .resume-grid>*:nth-child(2) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
     }
 }
