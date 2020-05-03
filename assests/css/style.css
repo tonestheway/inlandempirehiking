@@ -71,10 +71,6 @@ body {
 	-ms-grid-columns: 1fr 5em 1fr;
 	-ms-grid-rows: 1fr 5em;
 }
-#project-grid > *:nth-child(1) { -ms-grid-column: 1; -ms-grid-row: 1; }
-#project-grid > *:nth-child(2) { -ms-grid-column: 3; -ms-grid-row: 1; }
-#project-grid > *:nth-child(3) { -ms-grid-column: 1; -ms-grid-row: 3; }
-#project-grid > *:nth-child(4) { -ms-grid-column: 3; -ms-grid-row: 3; }
 
 .project-box {
 	width: 500px;
@@ -105,7 +101,16 @@ body {
 		-ms-grid-rows: 1fr 5em 1fr 5em 1fr 5em 1fr;
 	}
 
-	#project-grid > *:nth-child(1) { -ms-grid-column: 1; -ms-grid-row: 1; }
-	#project-grid > *:nth-child(2) { -ms-grid-column: 1; -ms-grid-row: 3; }
-	#project-grid > *:nth-child(3) { -ms-grid-column: 1; -ms-grid-row: 5; }
-	#project-grid > *:nth-child(4) { -ms-grid-column: 1; -ms-grid-row: 7; }
+    /* tool tip */
+.customToolTip > div {
+    display: flex;
+    justify-content: center;
+}
+.customToolTip a.btn span i.fas.fa-chevron-circle-up {
+    color: navy;
+    font-size: 25px;
+}
+
+.customToolTip a.btn span i.fas.fa-chevron-circle-up:hover {
+    color: skyblue
+}
