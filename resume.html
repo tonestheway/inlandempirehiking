@@ -184,22 +184,22 @@
                     <div style="text-align: center;">
                         <div style="display: inline-block;">
                             <div id="design-grid">
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 93%
                                     <img src="assests/images/photoshop.png" class="logo" width="100" height="auto" />
                                 </div>
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 98%
                                     <img src="assests/images/illustrator.png" class="logo" width="100" height="auto" />
                                 </div>
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 99%
                                     <img src="assests/images/indesign.png" class="logo" width="100" height="auto" />
                                 </div>
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 92%
                                     <img src="assests/images/sketchup.png" class="logo" width="100" height="auto" />
                                 </div>
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 85%
                                     <img src="assests/images/rhino.png" class="logo" width="100" height="auto" />
                                 </div>
-                                <div class="logoContainer">
+                                <div class="logoContainer"> 91%
                                     <img src="assests/images/xd.png" class="logo" width="100" height="auto" />
                                 </div>
                             </div>
@@ -278,13 +278,14 @@
 <!-- Tool tip and scroll spy -->
      <div class="row customToolTip">
          <div class="col-12">
-             <a class="btn toTop" data-toggle="tooltip" data-placement="right" title="Scroll to Top" href="resume.html">
+             <a class="btn toTop" data-toggle="tooltip" data-placement="right" title="Scroll to Top" href="resume.html"> 
                  <span>
                     <i class="fas fa-chevron-circle-up"></i>
                 </span>
              </a>
           </div>
        </div>
+    </div>
 
 
 </body>
@@ -300,6 +301,28 @@
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+
+<!-- custom script for tool tip and smooth scroll -->
+<script>
+    $(document).ready(function () {
+        // tool tip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // smooth scroll for scroll spy
+        $("a.toTop").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
 </script>
 </body>
 
