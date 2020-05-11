@@ -1,0 +1,243 @@
+.nonProfitContainer {
+    margin: 50px 0
+    }
+    
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px
+    }
+    
+    .logo {
+        width: 15%;
+        height: auto
+    }
+    
+    div#nonProfitNav>ul.navbar-nav {
+        margin: 0 auto;
+    }
+    
+    .nonProfitNav li.nav-item a {
+        margin: 0 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(58, 179, 58);
+    }
+    
+    .nonProfitNav li.nav-item a:hover {
+        background-color: darkgreen;
+        color: white
+    }
+    
+    .aboutDiv {
+        height: 200px;
+        background-image: url(../images/texture\ wood.jpg);
+        background-color: tan;
+        margin: 20px 0
+    }
+    
+    .sitemapDiv {
+        height: 1000px;
+        background-image: url(../images/texture\ wood.jpg);
+        background-color: tan;
+        margin: 20px 0
+    }
+    
+    .styleGuideDiv {
+        height: 1000px;
+        background-image: url(../images/texture\ wood.jpg);
+        margin: 20px 0
+    }
+
+    .userPersonaDiv {
+        height: 1000px;
+        background-image: url(../images/leaf\ texture.jpg) ;
+        margin: 20px
+    }
+
+    .wireframeDiv {
+        height: 1000px;
+        background-image: url(../images/leaf\ texture.jpg);
+        margin: 20px
+    }
+
+    .prototypesDiv {
+        height: 1000px;
+        background-image: url(../images/leaf\ texture.jpg);
+        margin: 20px;
+    }
+    
+    .resumeBtnContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        color: forestgreen;
+    }
+
+
+    
+    /* end note section */
+    .endNoteSection {
+        text-align: center;
+    }
+    
+    .endNoteSection p:first-of-type {
+        text-decoration: underline;
+        color: navajowhite;
+    }
+    
+    .endNoteSection p span {
+        color: navajowhite;
+        font-weight: bold;
+    }
+    
+    .endNoteSection .resumeBtn {
+        border: 1px solid navajowhite;
+        color: orangered;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .endNoteSection .resumeBtn:hover {
+        background-color: tan;
+        border: 1px solid transparent;
+        color: white
+    }
+    
+    
+    
+    
+    /* === Media Queries ==== */
+    @media only screen and (max-width: 768px) {
+        .logo {
+            width: 30%;
+            height: auto
+        }
+    
+        .nonProfitNav {
+            margin: 0 auto;
+            justify-content: center !important;
+    
+        }
+    
+        .nonProfitNav li.nav-item {
+            text-align: center;
+        }
+    }
+
+    .nonProfitContainer {
+        margin: 50px 0
+        }
+        
+        .logoContainer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px
+        }
+        
+        .logo {
+            width: 15%;
+            height: auto
+        }
+        
+        div#nonProfitNav>ul.navbar-nav {
+            margin: 0 auto;
+        }
+        
+        .nonProfitNav li.nav-item a {
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: mediumseagreen;
+        }
+        
+        .nonProfitNav li.nav-item a:hover {
+            background-color: seagreen;
+            color: white
+        }
+        
+        /* end note section */
+        .endNoteSection {
+            text-align: center;
+        }
+        
+        .endNoteSection h3 {
+            font-size: 180px;
+
+        }
+        .endNoteSection p:first-of-type {
+            font-size: 70px;
+            text-decoration: underline;
+            color: forestgreen;
+        }
+        
+        .endNoteSection p span {
+            font-size: 70px;
+            color: forestgreen;
+            font-weight: bold;
+        }
+
+        .endNoteSection p {
+            font-size: 60px;
+        }
+        
+        .endNoteSection .resumeBtn {
+            border: 1px solid tan;
+            color: tan;
+            padding: 20px 30px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .endNoteSection .resumeBtn:hover {
+            background-color: whitesmoke;
+            border: 1px solid transparent;
+            color: sienna
+        }
+        
+        
+        
+        
+        /* === Media Queries ==== */
+        @media only screen and (max-width: 768px) {
+            .logo {
+                width: 30%;
+                height: auto
+            }
+        
+            .nonProfitNav {
+                margin: 0 auto;
+                justify-content: center !important;
+        
+            }
+        
+            .nonProfitNav li.nav-item {
+                text-align: center;
+            }
+            
+            body {
+                background-image: assest/image/texture wood.jpg;
+            }
+
+            h2 {
+                color: forestgreen;
+            }
+
+
+            /* tool tip */
+.customToolTip > div {
+    display: flex;
+    justify-content: right;
+}
+.customToolTip a.btn span i.fas.fa-chevron-circle-up {
+    color: blue;
+    font-size: 25px;
+}
+
+.customToolTip a.btn span i.fas.fa-chevron-circle-up:hover {
+    color: skyblue

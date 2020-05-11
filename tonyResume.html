@@ -13,7 +13,7 @@
      
     <title>Inland Empire Hiking Final</title>
     <!-- local style sheet -->
-    <link rel="stylesheet" href="assets/css/defaultStyle.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/resume.css" type="text/css" />
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -27,8 +27,8 @@
 
 <body>
     <div class="containter-fluid customContainer">
-        <ing src="assests/images/" class="logo"
-    </div>
+        <ing src="assests/images/tony logo.png" class="logo"
+    
 
 
 
@@ -79,6 +79,12 @@
         </div>
     </nav>
 
+    <body>
+        <div class="container-fluid nonProfitContainer">
+            <div class="logoContainer">
+                <img src="assests/images/tony logo.png" class="logo" width="150" height="auto" />
+            </div>
+
     <!--About section-->
     <section class="aboutSection">
         <div class="aboutDiv">
@@ -102,4 +108,56 @@
             <p>this is my sitemap section</p>
             <p>this is my sitemap section</p>
         </div>
-    </section>
+        <section class="endNoteSection">
+            <h3>Thank You!</h3>
+            <p>Tammy Phillips</p>
+            <p><span>UX/UI</span> Designer & Developer</p>
+            <div class="resumeBtnContainer">
+                <a target="_blank" href="https://tonestheway.github.io/inlandempirehiking/resume.html" class="resumeBtn">Resume</a>
+            </div>
+        </section>
+    
+        <!-- Tool tip and scroll spy -->
+        <div class="row customToolTip">
+            <div class="col-12">
+                <a class="btn toTop" data-toggle="tooltip" data-placement="right" title="Scroll to Top" href="#topPage">
+                    <span>
+                        <i class="fas fa-chevron-circle-up"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    
+        <!-- boostrap script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    
+        <!-- custom script for tool tip and smooth scroll -->
+        <script>
+            $(document).ready(function () {
+                // tool tip
+                $('[data-toggle="tooltip"]').tooltip();
+                // smooth scroll for scroll spy
+                
+                $("a.toTop").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+    
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+    
+    </html>
