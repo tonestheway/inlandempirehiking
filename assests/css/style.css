@@ -12,6 +12,7 @@ body {
   img {
       display : block;
       margin : auto;
+      vertical-align: middle;
   }
   
   hr {
@@ -113,3 +114,5 @@ body {
 
 .customToolTip a.btn span i.fas.fa-chevron-circle-up:hover {
     color: skyblue
+
+    * {box-sizing:border-box}

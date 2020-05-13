@@ -12,9 +12,24 @@
         width: 15%;
         height: auto
     }
+
+    .row headlineTitle {
+        text-align: center;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
     
-    div#nonProfitNav>ul.navbar-nav {
+    .#nonProfitNav>ul.navbar-nav {
         margin: 0 auto;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto; 
     }
     
     .nonProfitNav li.nav-item a {
@@ -30,39 +45,65 @@
     }
     
     .aboutDiv {
-        height: 200px;
+        height: auto;
         background-image: url(../images/texture\ wood.jpg);
-        background-color: tan;
-        margin: 20px 0
+        margin: 20px 
+        
     }
     
     .sitemapDiv {
-        height: 1000px;
+        height: auto;
         background-image: url(../images/texture\ wood.jpg);
-        background-color: tan;
-        margin: 20px 0
+        margin: 20px
     }
-    
+
     .styleGuideDiv {
-        height: 1000px;
+        height: auto;
         background-image: url(../images/texture\ wood.jpg);
-        margin: 20px 0
+        margin: 20px
     }
 
     .userPersonaDiv {
-        height: 1000px;
+        height: auto;
         background-image: url(../images/leaf\ texture.jpg) ;
         margin: 20px
     }
 
     .wireframeDiv {
-        height: 1000px;
+        height: 2000px;
         background-image: url(../images/leaf\ texture.jpg);
         margin: 20px
     }
 
+    .carousel-item {
+        height: auto;
+        margin-right: 500px;
+    }
+    
+    .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: darkgreen;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: darkgreen;
+}
+
+.prototypeSection {
+    justify-content: center;
+    display: flex;
+}
+   
+
+
+   
+
     .prototypesDiv {
-        height: 1000px;
+        height: auto;
         background-image: url(../images/leaf\ texture.jpg);
         margin: 20px;
     }
@@ -92,7 +133,44 @@
         color: navajowhite;
         font-weight: bold;
     }
-    
+    .center {
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
+
+      .row {
+          justify-content: center;
+      }
+
+      .carousel-item {
+          justify-content: center;
+          margin-left: 400px;
+          display: block;
+      }
+
+/* ==== video display section ===*/
+.video-section {
+    width: 50%;
+    height: auto;
+     
+}
+
+.video-section div.row {
+    margin-right: 550px;
+}
+
+.video-section h2{
+    margin-right: 1000px;
+}
+
+.video-section video,
+.video-section img,
+.video-section iframe {
+    height: auto;
+    width: 200%;
+}
+
     .endNoteSection .resumeBtn {
         border: 1px solid navajowhite;
         color: orangered;
@@ -133,6 +211,7 @@
         margin: 50px 0
         }
         
+        
         .logoContainer {
             display: flex;
             justify-content: center;
@@ -159,6 +238,10 @@
             background-color: seagreen;
             color: white
         }
+
+        .prototypesDiv {
+            display: flex
+        }
         
         /* end note section */
         .endNoteSection {
@@ -166,7 +249,7 @@
         }
         
         .endNoteSection h3 {
-            font-size: 180px;
+            font-size: 140px;
 
         }
         .endNoteSection p:first-of-type {
@@ -199,36 +282,6 @@
             border: 1px solid transparent;
             color: sienna
         }
-        
-        
-        
-        
-        /* === Media Queries ==== */
-        @media only screen and (max-width: 768px) {
-            .logo {
-                width: 30%;
-                height: auto
-            }
-        
-            .nonProfitNav {
-                margin: 0 auto;
-                justify-content: center !important;
-        
-            }
-        
-            .nonProfitNav li.nav-item {
-                text-align: center;
-            }
-            
-            body {
-                background-image: assest/image/texture wood.jpg;
-            }
-
-            h2 {
-                color: forestgreen;
-            }
-
-
             /* tool tip */
 .customToolTip > div {
     display: flex;
@@ -240,4 +293,5 @@
 }
 
 .customToolTip a.btn span i.fas.fa-chevron-circle-up:hover {
-    color: skyblue
+    color: skyblue;
+}
